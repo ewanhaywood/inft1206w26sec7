@@ -13,4 +13,11 @@ body {
 ul {
     background-color: white;
     border: 5px solid purple;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+h1 {
+    color: darkslategray;
+    border: 10px dotted purple;
 }
