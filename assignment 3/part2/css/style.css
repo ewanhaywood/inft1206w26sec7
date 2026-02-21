@@ -45,13 +45,20 @@ footer p {
 h1 {
     font-size: 42px;
     text-align: center;
+    letter-spacing: 4px;
 }
 
 h2 {
     font-size: 25px;
     margin-bottom: 0;
+    letter-spacing: 2px;
 }
 
 p,li {
     line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+section h2 + p {
+    text-indent: 2rem;
 }
