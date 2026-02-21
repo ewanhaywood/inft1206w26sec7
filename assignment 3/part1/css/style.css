@@ -20,4 +20,15 @@ ul {
 h1 {
     color: darkslategray;
     border: 10px dotted purple;
+    font-size: 2rem;
+}
+
+h2 {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.job-title {
+    color: darkslategray;
+    font-weight: bold;
 }
