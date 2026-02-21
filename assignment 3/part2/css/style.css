@@ -44,4 +44,14 @@ footer p {
 
 h1 {
     font-size: 42px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+p,li {
+    line-height: 1.5;
 }
