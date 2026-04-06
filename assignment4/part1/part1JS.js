@@ -1,3 +1,8 @@
+// 	Name: Ewan Haywood
+// 	File: part1JS.js
+// 	Date: April 6, 2026
+// 	javascript for assignment 4 part 1
+
 // Complete variable definitions and random functions
 
 const customName = document.getElementById("custom-name");
