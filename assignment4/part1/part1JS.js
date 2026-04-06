@@ -25,9 +25,13 @@ const events = ["spontaneously combusted", "melted into a puddle on the sidewalk
 // Partial return random string function
 
 function returnRandomStoryString() {
-  // It was 94 Fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.
+    const random_character = randomValueFromArray(characters);
+    const random_place = randomValueFromArray(places);
+    const random_event = randomValueFromArray(events);
 
-  return storyText;
+    let storyText = 'It was 94 Fahrenheit outside, so ${random_character} went for a walk. When they got to ${random_place}, they stared in horror for a few moments, then ${random_event}. Bob saw the whole thing, but was not surprised — ${random_character} weighs 300 pounds, and it was a hot day.';
+
+    return storyText;
 }
 
 // Event listener and partial generate function definition
