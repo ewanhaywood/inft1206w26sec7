@@ -29,7 +29,7 @@ function returnRandomStoryString() {
     const random_place = randomValueFromArray(places);
     const random_event = randomValueFromArray(events);
 
-    let storyText = 'It was 94 Fahrenheit outside, so ${random_character} went for a walk. When they got to ${random_place}, they stared in horror for a few moments, then ${random_event}. Bob saw the whole thing, but was not surprised — ${random_character} weighs 300 pounds, and it was a hot day.';
+    let storyText = `It was 94 Fahrenheit outside, so ${random_character} went for a walk. When they got to ${random_place}, they stared in horror for a few moments, then ${random_event}. Bob saw the whole thing, but was not surprised — ${random_character} weighs 300 pounds, and it was a hot day.`;
 
     return storyText;
 }
@@ -39,16 +39,20 @@ function returnRandomStoryString() {
 generateBtn.addEventListener("click", generateStory);
 
 function generateStory() {
+  let newStory = returnRandomStoryString();
+
   if (customName.value !== "") {
     const name = customName.value;
+    newStory = newStory.replace("Bob", name);
   }
 
   if (document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature = Math.round(94);
+    const weight = `${Math.round(300 / 14)} stone`;
+    const temperature = `${Math.round((94 - 32) * (5 / 9))} Celsius`;
+    newStory = newStory.replace("300 pounds", weight);
+    newStory = newStory.replace("94 Fahrenheit", temperature);
   }
 
-  // TODO: replace "" with the correct expression
-  story.textContent = "";
+  story.textContent = newStory;
   story.style.visibility = "visible";
 }
