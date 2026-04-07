@@ -16,3 +16,19 @@ const images = [
     {filename: "pic4.jpg", alt: "wall from a egyptian tomb"},
     {filename: "pic5.jpg", alt: "a moth of a leaf"},  
 ];
+
+const baseURL = "https://mdn.github.io/shared-assets/images/examples/learn/gallery/";
+
+for (const image of images) {
+    const newImage = document.createElement("img");
+    newImage.src = `${baseURL}${image.filename}`;
+    newImage.alt = image.alt;
+    newImage.tabIndex = "0";
+    thumbBar.appendChild(newImage);
+    newImage.addEventListener("click", updateDisplayedImage);
+    newImage.addEventListener("keydown", (e) => {
+        if (e.code == "Enter") {
+            updateDisplayedImage(e);
+        }
+    });
+}
