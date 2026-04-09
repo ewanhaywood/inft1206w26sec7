@@ -1,3 +1,7 @@
+/* Name: Ewan Haywood
+File: part3JS,js
+Date: April 8, 2026
+Assignment 4 part 3 javascript code */
 // setup canvas
 
 const canvas = document.querySelector("canvas");
