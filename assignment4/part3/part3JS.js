@@ -74,7 +74,6 @@ class Ball {
     }
   }
 }
-}
 
 const balls = [];
 
