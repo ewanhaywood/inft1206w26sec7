@@ -1,5 +1,5 @@
 /* Name: Ewan Haywood
-File: part4JS,js
+File: part4JS.js
 Date: April 8, 2026
 Assignment 4 part 4 javascript code */
 // setup canvas
@@ -104,6 +104,14 @@ function loop() {
   }
 
   requestAnimationFrame(loop);
+}
+
+class Shape {
+  constructor(x, y, velX, velY) {
+    this.x = x;
+    this.y = y;
+    this.velX = velX;
+    this.velY = velY;
 }
 
 loop();
