@@ -110,6 +110,15 @@ class Shape {
     this.y = y;
     this.velX = velX;
     this.velY = velY;
+  }
+}
+
+class EvilCircle extends Shapes {
+  constructor(x, y,) {
+    super(x, y, 20, 20);
+    this.color = "white";
+    this.size = 10;
+  }
 }
 
 loop();
