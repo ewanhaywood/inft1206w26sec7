@@ -1,3 +1,8 @@
+// Name: Ewan Haywood
+// 	File: main.js
+// 	Date: April 14, 2026
+// 	assignment 5 javascript code
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
